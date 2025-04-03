@@ -25,7 +25,6 @@ const Navbar = () => {
             <Link to="/products?category=spectacles" className="text-gray-700 hover:text-navy font-medium">Spectacles</Link>
             <Link to="/about" className="text-gray-700 hover:text-navy font-medium">About</Link>
             <Link to="/contact" className="text-gray-700 hover:text-navy font-medium">Contact</Link>
-            <Link to="/admin" className="text-navy hover:text-navy-dark font-medium">Admin</Link>
           </div>
 
           <div className="hidden md:flex md:items-center md:space-x-4">
@@ -65,7 +64,6 @@ const Navbar = () => {
             <Link to="/products?category=spectacles" className="block text-gray-700 hover:text-navy font-medium py-2" onClick={() => setIsOpen(false)}>Spectacles</Link>
             <Link to="/about" className="block text-gray-700 hover:text-navy font-medium py-2" onClick={() => setIsOpen(false)}>About</Link>
             <Link to="/contact" className="block text-gray-700 hover:text-navy font-medium py-2" onClick={() => setIsOpen(false)}>Contact</Link>
-            <Link to="/admin" className="block text-gray-700 hover:text-navy font-medium py-2" onClick={() => setIsOpen(false)}>Admin</Link>
             <div className="flex items-center space-x-4 pt-4 border-t">
               <Button variant="ghost" size="icon">
                 <Search className="h-5 w-5" />
