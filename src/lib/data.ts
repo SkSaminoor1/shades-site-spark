@@ -84,3 +84,21 @@ export const getProductById = (id: string): Product | undefined => {
 export const getProductsByCategory = (category: 'sunglasses' | 'spectacles'): Product[] => {
   return products.filter(product => product.category === category);
 };
+
+// Add these types and functions for the admin section
+export interface OrderItem {
+  productId: string;
+  name: string;
+  price: number;
+  quantity: number;
+}
+
+export interface Order {
+  id: string;
+  customerName: string;
+  email: string;
+  date: string;
+  status: 'pending' | 'processing' | 'completed' | 'cancelled';
+  total: number;
+  items: OrderItem[];
+}
