@@ -1,4 +1,5 @@
 
+import React from "react";  // Make sure React is explicitly imported
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,6 +13,7 @@ import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 
+// Create a client
 const queryClient = new QueryClient();
 
 const App = () => (
